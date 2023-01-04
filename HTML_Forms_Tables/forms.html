@@ -12,11 +12,25 @@
   <h1>Forms Demo</h1>
 
   <!-- empty container(묶음). 입력을 그룹화한 다음 지정된 대상에 함께 제출 -->
+  <!-- label은 text 그 이상의 의미를 가짐. 일부 입력과 텍스트 간 직접적 연결을 가짐(for. id). screen reader도 가능 -->
   <form action="/tacos">
-    <input type="text" placeholder="username">
-    <input type="password" placeholder="password">
-    <input type="color">
-    <input type="number" placeholder="enter a number">
+    <p>
+      <label for="username">Enter a Username:</label>
+      <input id="username" type="text" placeholder="username">
+    </p>
+    <p>
+      <label for="password">Enter a Password:</label>
+      <input id="password" type="password" placeholder="password">
+    </p>
+    <p>
+      <label for="color">Enter a Color:</label>
+      <input type="color" id="color">
+    </p>
+    <p>
+      <label for="number">Enter a Number:</label>
+      <input type="number" placeholder="enter a number" id="number">
+    </p>
+
   </form>
 </body>
 

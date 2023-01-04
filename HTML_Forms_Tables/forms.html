@@ -16,22 +16,24 @@
   <!-- form 내부에 있는 버튼의 기본 동작은 해당 양식을 제출하는 것 -->
   <form action="/tacos">
 
+    <!-- file:///tacos?username=ddd&password=1234&color=%23db0bea&num=9 -->
+    <!-- name의 값은 서버에 데이터를 보내는데 사용되는 이름. -->
     <p>
       <label for="username">Enter a Username:</label>
-      <input id="username" type="text" placeholder="username">
+      <input id="username" type="text" placeholder="username" name="username">
     </p>
     <p>
       <label for="password">Enter a Password:</label>
-      <input id="password" type="password" placeholder="password">
+      <input id="password" type="password" placeholder="password" name="password">
     </p>
     <button>IN THE MIDDLE!</button>
     <p>
       <label for="color">Enter a Color:</label>
-      <input type="color" id="color">
+      <input type="color" id="color" name="color">
     </p>
     <p>
       <label for="number">Enter a Number:</label>
-      <input type="number" placeholder="enter a number" id="number">
+      <input type="number" placeholder="enter a number" id="number" name="num">
     </p>
     <button>Submit!!!</button>
     <!-- 기본 type="submit", type="button"은 아무것도 하지 않음 -->

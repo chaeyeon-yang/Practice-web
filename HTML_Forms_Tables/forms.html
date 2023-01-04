@@ -13,7 +13,9 @@
 
   <!-- empty container(묶음). 입력을 그룹화한 다음 지정된 대상에 함께 제출 -->
   <!-- label은 text 그 이상의 의미를 가짐. 일부 입력과 텍스트 간 직접적 연결을 가짐(for. id). screen reader도 가능 -->
+  <!-- form 내부에 있는 버튼의 기본 동작은 해당 양식을 제출하는 것 -->
   <form action="/tacos">
+
     <p>
       <label for="username">Enter a Username:</label>
       <input id="username" type="text" placeholder="username">
@@ -22,6 +24,7 @@
       <label for="password">Enter a Password:</label>
       <input id="password" type="password" placeholder="password">
     </p>
+    <button>IN THE MIDDLE!</button>
     <p>
       <label for="color">Enter a Color:</label>
       <input type="color" id="color">
@@ -30,8 +33,13 @@
       <label for="number">Enter a Number:</label>
       <input type="number" placeholder="enter a number" id="number">
     </p>
-
+    <button>Submit!!!</button>
+    <!-- 기본 type="submit", type="button"은 아무것도 하지 않음 -->
+    <button type="button">PLEASE DO NOT SUBMIT THE FORM</button>
+    <input type="submit" value="Click Me!">
   </form>
+  <hr>
+  <button>Not Inside Form</button>
 </body>
 
 </html>

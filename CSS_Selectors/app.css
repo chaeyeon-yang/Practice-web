@@ -31,6 +31,8 @@ span {
 
 .post a {
     color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 footer a {
@@ -63,4 +65,32 @@ input[type="password"] {
 /* *은 다음을 포함하는 항목을 찾아냄 */
 a[href*="google"] {
     color: magenta;
+}
+
+/* hover: 마우스를 위에 올려놓음 */
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* active: click 하는 동안 발생 */
+.post button:active {
+    background-color: #02c39a;
+}
+
+/* 요소가 많을 경우, 특정 요소만을 선택해 css 적용 */
+
+/* 3번째 요소 선택 */
+/* .post:nth-of-type(3) {
+    background-color: #dfe8dc;
+} */
+
+/* 3의 배수번째 요소 선택 */
+
+.post:nth-of-type(3n) {
+    background-color: #dfe8dc;
 }

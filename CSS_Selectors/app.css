@@ -51,3 +51,16 @@ h2 + button {
 footer > a {
     color: #457b9d;
 }
+
+input[type="password"] {
+    color: greenyellow;
+}
+
+/* section[class="post"] {
+    background-color: purple;
+} */
+
+/* *은 다음을 포함하는 항목을 찾아냄 */
+a[href*="google"] {
+    color: magenta;
+}

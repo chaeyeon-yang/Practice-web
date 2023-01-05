@@ -1,0 +1,17 @@
+body {
+    color: purple;
+}
+
+section {
+    color: aqua;
+}
+
+form {
+    color: greenyellow;
+}
+
+/* 가장 가까운 부모의 속성을 상속함 */
+button,
+input {
+    color: inherit;
+}

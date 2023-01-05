@@ -94,3 +94,19 @@ a[href*="google"] {
 .post:nth-of-type(3n) {
     background-color: #dfe8dc;
 }
+
+/* pseudo elements. */
+/* first letter만 선택 */
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+/* selection -- 하이라이트. 드래그한 부분의 스타일 지정 */
+
+p::selection {
+    background-color: #fcbf49;
+}

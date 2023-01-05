@@ -36,3 +36,18 @@ span {
 footer a {
     color: #e63946;
 }
+
+/* Adjacent selector: (+) 인접해있는 것을 나타냄 */
+input + button {
+    background-color: pink;
+}
+
+h2 + button {
+    font-size: 20px;
+}
+
+/* Direct child selector: (>) 직계 자식을 나타냄 */
+
+footer > a {
+    color: #457b9d;
+}

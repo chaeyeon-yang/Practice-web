@@ -59,6 +59,32 @@
     <input type="text" name="search_query">
     <button>Search Youtube</button>
   </form>
+  <h2>More Inputs!</h2>
+  <form action="/birds">
+    <input type="checkbox" name="agree_tos" id="agree">
+    <label for="agree">I agree to everything</label>
+    <!-- checkbox와 달리 radio box는 해당 그룹 중 하나만 선택할 수 있음 -->
+    <!-- radio를 그룹화하기 위해 동일한 name을 지정하여 연결 -->
+    <!-- form을 제출했을 때 어느 것을 선택했는지 알게 하기위해 value속성 사용 -->
+    <p>
+      <label for="xs">XS</label>
+      <input type="radio" name="size" id="xs" value="xs">
+      <label for="s">S</label>
+      <input type="radio" name="size" id="s" value="s">
+      <label for="m">M</label>
+      <input type="radio" name="size" id="m" value="m">
+    </p>
+    <p>
+      <label for="meal">Please Select an Entree</label>
+      <select name="meal" id="meal">
+        <option value="fish">Fish</option>
+        <option value="veg">Vegetarian</option>
+        <option value="steak">Steak</option>
+      </select>
+    </p>
+    <button>Submit</button>
+  </form>
+
 </body>
 
 </html>

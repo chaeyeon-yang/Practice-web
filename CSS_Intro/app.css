@@ -1,6 +1,6 @@
 h2 {
-    color: teal;
-    background-color: plum;
+    color: #5fcffc;
+    background-color: rgb(89, 151, 0);
 }
 
 button {
@@ -12,3 +12,12 @@ p {
     color: olive;
     background: orange;
 }
+
+/* RGB로 색상 표현 
+  rgb(0,0,255) */
+
+/*  16 진수로 색상 표현 */
+/*  #ffff00
+  각 두자리가 red, green, blue
+  ff-> 255를 나타냄 */
+/* #000000 -> exactly same #000 */

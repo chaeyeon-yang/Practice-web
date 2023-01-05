@@ -5,9 +5,9 @@ h1 {
     letter-spacing: 15px;
     font-size: 80px;
     font-family: Segoe UI, Futura, Arial, sans-serif;
-    /* 유저가 해당 글꼴이 없을 경우의 차선책들 나열 */
+    /* 유저가 해당 글꼴이 없을 경우의 차선책들 나열(백업) */
     /* 또는 대표적인 글꼴 묶음 말로 font-family 지정 */
-    font-family: monospace;
+    /* font-family: monospace; */
 }
 
 a {

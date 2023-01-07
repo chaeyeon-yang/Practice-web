@@ -17,3 +17,31 @@ h1 {
     border: 1px solid black;
     line-height: 200%;
 }
+
+/* em: 부모 크기를 기준으로 상대적인 배수 크기 적용 */
+/* em에서 margin, padding을 사용할 때, 1em은 요소 자체의 글꼴 크기와 같다.  */
+h2 {
+    font-size: 2em;
+    margin-left: 1em;
+    /* margin-left 값은 폰트 크기인 40px과 같다. */
+}
+
+h3 {
+    font-size: 1.5em;
+}
+p {
+    font-size: 1em;
+}
+
+article {
+    font-size: 20px;
+}
+/* 버튼의 경우 font size에 따라 모서리 둥글기가 바뀌게 된다. so */
+/* rems를 사용하면 요소의 글꼴 크기 기준으로 항목을 유지할 수 있다. */
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #2a9d8f;
+    color: white;
+}

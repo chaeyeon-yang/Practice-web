@@ -1,0 +1,20 @@
+section {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+/* rgba는 해당 배경색은 바뀌지만, 그 요소안의 텍스트엔 영향을 끼치지 않는다. */
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* opacity는 요소에 설정한 속성으로 전체요소의 투명도를 제어한다. */
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.3;
+}

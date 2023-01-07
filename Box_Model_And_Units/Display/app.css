@@ -19,7 +19,8 @@ h1 {
     padding: 50px;
     margin: 100px;
     /* padding과 margin이 존중된다. */
-    display: none;
+
+    /* display: none; */
     /* 요소가 완전히 삭제되지 않지만 볼 수 없다. */
 }
 

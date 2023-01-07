@@ -1,0 +1,19 @@
+section {
+    background-color: #6d6875;
+    width: 800px;
+    height: 800px;
+}
+
+/* percentage : relative unit, width -> 부모 기준 (높이 너비) */
+/* percentage: relative unit, line-height -> 요소 자체 기준 */
+div {
+    background-color: #e5989b;
+    width: 50%;
+    height: 50%;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%;
+}

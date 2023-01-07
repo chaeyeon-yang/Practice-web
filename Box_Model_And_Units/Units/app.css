@@ -1,4 +1,8 @@
-section {
+html {
+    font-size: 30px;
+}
+
+#percentages {
     background-color: #6d6875;
     width: 800px;
     height: 800px;
@@ -6,7 +10,7 @@ section {
 
 /* percentage : relative unit, width -> 부모 기준 (높이 너비) */
 /* percentage: relative unit, line-height -> 요소 자체 기준 */
-div {
+#percentages div {
     background-color: #e5989b;
     width: 50%;
     height: 50%;
@@ -20,21 +24,21 @@ h1 {
 
 /* em: 부모 크기를 기준으로 상대적인 배수 크기 적용 */
 /* em에서 margin, padding을 사용할 때, 1em은 요소 자체의 글꼴 크기와 같다.  */
-h2 {
+#ems h2 {
     font-size: 2em;
     margin-left: 1em;
     /* margin-left 값은 폰트 크기인 40px과 같다. */
 }
 
-h3 {
+#ems h3 {
     font-size: 1.5em;
 }
-p {
+#ems p {
     font-size: 1em;
 }
 
-article {
-    font-size: 20px;
+#ems {
+    font-size: 15px;
 }
 /* 버튼의 경우 font size에 따라 모서리 둥글기가 바뀌게 된다. so */
 /* rems를 사용하면 요소의 글꼴 크기 기준으로 항목을 유지할 수 있다. */
@@ -45,3 +49,29 @@ button {
     background-color: #2a9d8f;
     color: white;
 }
+
+/* em은 부모 글꼴 크기를 가반으로 하기 때문에 중첩된 요소에서 문제를 일으킬 수 있음  */
+#ems ul {
+    font-size: 1.5em;
+}
+
+/* rem: 부모가 아닌 루트 html 요소인 글꼴 크기를 기준으로 가져온다.  */
+
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 0.8rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}
+
+/* 일정한 비율의 버튼 같은 요소를 만들 땐 em이 유용하고(작은 구성요소, 재사용이 가능하고 그에 따라 확장 또는 축소 가능한 것)
+일반적으로 전체 문서의 상대적인 부분을 다룰땐 rem을 쓴다 */

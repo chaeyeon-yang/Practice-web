@@ -1,0 +1,36 @@
+/* INLINE */
+span {
+    /* background-color: palevioletred; */
+    border: 1px solid black;
+    width: 500px;
+    /* inline 요소의 경우 높이, 너비가 무시된다. */
+    /* padding 이 있긴 하지만 실제로는 존중되지 않는다. */
+    /* margin은 수평으로만 적용가능하다. */
+    padding: 50px;
+    margin: 50px;
+}
+
+/* BLOCK */
+h1 {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    width: 300px;
+    /* block 요소의 경우 높이, 너비가 존중된다. */
+    padding: 50px;
+    margin: 100px;
+    /* padding과 margin이 존중된다. */
+    display: none;
+    /* 요소가 완전히 삭제되지 않지만 볼 수 없다. */
+}
+
+/* INLINE_BLOCK */
+div {
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 5px solid black;
+    display: inline-block;
+    /* inline-block 요소의 경우 높이, 너비가 존중된다. */
+    /* margin, padding 또한 존중된다. */
+    margin: 50px;
+}

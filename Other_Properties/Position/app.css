@@ -32,7 +32,7 @@ div {
     top: 1px;
     left: 1px;
 }
-
+/* 부모 요소와 관련이 없다 */
 #fixed #middle {
     position: fixed;
     top: 0;

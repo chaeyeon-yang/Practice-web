@@ -1,0 +1,26 @@
+section {
+    width: 80%;
+    height: 800px;
+    /* background-image: url("https://images.unsplash.com/photo-1564442038901-4f9a19d3d456?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1227&q=80");
+    
+    /* 이미지를 늘리지 않고 최대한 크게 확대하거나 축소한다.(이미지가 잘릴 수 있음) */
+    /* background-size: cover; */
+
+    /* 이미지를 늘리거나 자르지 않고 이미지를 최대한 크게 유지하지만 반복될 수 있다. */
+    /* background-size: contain; */
+
+    /* 배경이 실제로 시작되는 위치 결정 */
+    background-position: top;
+    background: center/cover
+        url("https://images.unsplash.com/photo-1564442038901-4f9a19d3d456?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1227&q=80");
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 150px;
+    text-align: center;
+    text-shadow: black -6px 6px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: lighter;
+    color: white;
+}

@@ -13,7 +13,8 @@ h1 {
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 /* flex-direction: 컨테이너의 기본 축 방향 설정 -- default는 row */
@@ -21,3 +22,6 @@ h1 {
     width: 200px;
     height: 200px;
 }
+
+/* justify-content: 실제 요소, 콘텐츠가 기본 축에 분산되는 방식 결정 */
+/* default -- flex-start */

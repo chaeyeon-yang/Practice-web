@@ -9,14 +9,13 @@ h1 {
 #container {
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    /* height: 150px; */
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
     /* flex-wrap: wrap-reverse; -- 교차축을 변경할 때 사용할 수 있음 */
 }
@@ -24,13 +23,21 @@ h1 {
 /* flex-direction: 컨테이너의 기본 축 방향 설정 -- default는 row */
 
 #container div {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    /* max-width: 250px; */
     text-align: center;
+    flex-basis: 500px;
+}
+
+div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink: 2;
 }
 
 div:nth-of-type(5) {
-    align-self: flex-start;
+    flex-grow: 2;
+    flex-shrink: 0;
 }
 
 /* justify-content: 실제 요소, 콘텐츠가 기본 축에 분산되는 방식 결정 */
@@ -44,3 +51,9 @@ div:nth-of-type(5) {
    - 즉, 행이 하나 이상일 때 사용함 */
 
 /* align self: 플렉스 컨테이너의 개별 항목에 대한 것.  */
+
+/* flex-basis: 추가 공간이 분배되기 전에 요소의 초기 크기를 정의 */
+
+/* flex-grow: 사용가능한 공간이 있는 경우 요소가 차지하는 공간의 양을 제어 */
+
+/* flex-shrink: 다른 요소에 비해 얼마나 축소되어야 하는지를 나타냄 */

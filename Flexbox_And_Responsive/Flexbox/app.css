@@ -2,7 +2,8 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-h1 {
+h1,
+h2 {
     text-align: center;
 }
 
@@ -57,3 +58,23 @@ div:nth-of-type(5) {
 /* flex-grow: 사용가능한 공간이 있는 경우 요소가 차지하는 공간의 양을 제어 */
 
 /* flex-shrink: 다른 요소에 비해 얼마나 축소되어야 하는지를 나타냄 */
+
+/* flex: 세 가지 요소가 있을 경우 - flex-grow | flex-shrink | flex-basis */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 300px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: #6930c3;
+    flex: 1 2 200px;
+}
+
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 1 600px;
+}

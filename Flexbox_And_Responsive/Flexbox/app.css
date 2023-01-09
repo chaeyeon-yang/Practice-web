@@ -15,8 +15,8 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap-reverse;
+    align-items: flex-end;
+    flex-wrap: wrap;
 
     /* flex-wrap: wrap-reverse; -- 교차축을 변경할 때 사용할 수 있음 */
 }
@@ -29,9 +29,18 @@ h1 {
     text-align: center;
 }
 
+div:nth-of-type(5) {
+    align-self: flex-start;
+}
+
 /* justify-content: 실제 요소, 콘텐츠가 기본 축에 분산되는 방식 결정 */
 /* default -- flex-start */
 
 /* flex-wrap: 교차축을 반전 */
 
 /* align-items: 메인 축이 아닌 교차축 기준으로 정렬 */
+
+/* align-content: 요소가 교차축 기준으로 분산 -- flex-wrap이 있을 경우에만 해당
+   - 즉, 행이 하나 이상일 때 사용함 */
+
+/* align self: 플렉스 컨테이너의 개별 항목에 대한 것.  */

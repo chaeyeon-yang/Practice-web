@@ -1,0 +1,37 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap-reverse;
+
+    /* flex-wrap: wrap-reverse; -- 교차축을 변경할 때 사용할 수 있음 */
+}
+
+/* flex-direction: 컨테이너의 기본 축 방향 설정 -- default는 row */
+
+#container div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+/* justify-content: 실제 요소, 콘텐츠가 기본 축에 분산되는 방식 결정 */
+/* default -- flex-start */
+
+/* flex-wrap: 교차축을 반전 */
+
+/* align-items: 메인 축이 아닌 교차축 기준으로 정렬 */

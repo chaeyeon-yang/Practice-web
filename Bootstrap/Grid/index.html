@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Basics</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 </head>
 <!-- 부트스트랩의 모든 행에는 분할 공간이 12단위 있다. -->
 
@@ -29,6 +29,47 @@
         <div class="col bg-primary">I AM AUTO SIZED</div>
         <div class="col bg-secondary">I AM AUTO SIZED</div>
         <div class="col-8 bg-primary">I AM AUTO SIZED</div>
+      </div>
+      <h2 class="display-4">Responsive Grid</h2>
+      <div class="row">
+        <!-- md: 중간 중단점 이후에 50% 50%로 분할 xl: xl중단점 이후에 4개로 분할-->
+        <div class="col-md-6 col-xl-3 bg-info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis tempora fugit dolores optio
+          eveniet dolorum. Suscipit maiores aut delectus. Molestiae ipsum, delectus obcaecati similique mollitia maiores
+          possimus ad eos.
+        </div>
+        <div class="col-md-6 col-xl-3 bg-success">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis tempora fugit dolores optio
+          eveniet dolorum. Suscipit maiores aut delectus. Molestiae ipsum, delectus obcaecati similique mollitia maiores
+          possimus ad eos.
+        </div>
+        <div class="col-md-6 col-xl-3 bg-info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis tempora fugit dolores optio
+          eveniet dolorum. Suscipit maiores aut delectus. Molestiae ipsum, delectus obcaecati similique mollitia maiores
+          possimus ad eos.
+        </div>
+        <div class="col-md-6 col-xl-3 bg-success">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis tempora fugit dolores optio
+          eveniet dolorum. Suscipit maiores aut delectus. Molestiae ipsum, delectus obcaecati similique mollitia maiores
+          possimus ad eos.
+        </div>
+      </div>
+      <div class="row g-0">
+        <div class="col-xl-4 col-md-6">
+          <img class="img-fluid"
+            src="https://images.unsplash.com/photo-1480044965905-02098d419e96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            alt="">
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <img class="img-fluid"
+            src="https://images.unsplash.com/photo-1444464666168-49d633b86797?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"
+            alt="">
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <img class="img-fluid"
+            src="https://plus.unsplash.com/premium_photo-1667667846223-0213b13d89c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80"
+            alt="">
+        </div>
       </div>
     </div>
 

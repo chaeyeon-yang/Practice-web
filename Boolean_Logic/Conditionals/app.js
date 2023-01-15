@@ -1,21 +1,21 @@
 // let random = Math.random();
 // if (random < 0.5) {
 //     console.log("YOUR NUMBER IS LESS THAN 0.5!!!");
-//     console.log(random);
+// } else {
+//     console.log("YOUR NUMBER IS GREATER (Or EQUAL) THAN 0.5!!!");
 // }
-// if (random >= 0.5) {
-//     console.log("YOUR NUMBER IS GREATER THAN 0.5!!!");
-//     console.log(random);
-// }
+// console.log(random);
 
-// const dayOfWeek = "Friday";
+// const dayOfWeek = prompt("ENTER A DAY").toLowerCase();
 
-// if (dayOfWeek === "Monday") {
+// if (dayOfWeek === "monday") {
 //     console.log("UGHHH I HATE MONDAYS!");
-// } else if (dayOfWeek === "Saturday") {
+// } else if (dayOfWeek === "saturday") {
 //     console.log("YAY I LOVE SATURDAYS!");
-// } else if (dayOfWeek === "Friday") {
+// } else if (dayOfWeek === "friday") {
 //     console.log("FRIDAYS ARE DECENT, ESPECIALLY AFTER WORK!");
+// } else {
+//     console.log("MEH");
 // }
 
 const age = 8;
@@ -26,4 +26,6 @@ if (age < 5) {
     console.log("You are a child. You pay $10");
 } else if (age < 65) {
     console.log("You are an adult. You pay $20 ");
+} else {
+    console.log("You are a senior. You pay $10");
 }

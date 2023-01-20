@@ -4,8 +4,17 @@ function singSong() {
     console.log("MI");
 }
 
-function greet(firstName) {
-    console.log(`firstName is ${firstName}`);
+function greet(firstName, lastName) {
+    console.log(`Hey there, ${firstName} ${lastName[0]}.`);
 }
 
-singSong();
+function repeat(str, numTimes) {
+    for (let i = 0; i < numTimes; i++) {
+        console.log("HI");
+    }
+}
+
+repeat("hgjhgj", 5);
+// greet("Clooney", "George");
+
+// singSong();

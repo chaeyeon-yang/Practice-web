@@ -15,7 +15,6 @@
 
 // callTwice(rollDie);
 
-    for (let i = 0; i < 10; i++) {
 function makeMysteryFunc() {
     const rand = Math.random();
     if (rand > 0.5) {

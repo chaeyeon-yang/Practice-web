@@ -1,16 +1,12 @@
+// forEach 와 다른 점은 반환을 사용하여 결과 값인 새 배열을 생성한다는 것이다.
+// 따라서 한 상태에서 다른 상태로 배열을 매핑하는 방법이다.
+
 const numbers = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
 ];
 
-function print(element) {
-    console.log(element);
-}
-
-// forEach는 인자를 넘겨줌
-numbers.forEach(function (el) {
-    if (el % 2 === 0) {
-        console.log(el);
-    }
+const doubles = numbers.map(function (num) {
+    return num * 2;
 });
 
 const movies = [
@@ -32,8 +28,6 @@ const movies = [
     },
 ];
 
-movies.forEach(function (movie) {
-    console.log(`${movie.title} - ${movie.score}/100`);
+const titles = movies.map(function (movie) {
+    return movie.title.toUpperCase();
 });
-
-// 실행 후 새로운 배열을 생성하지 않는다!!!

@@ -56,3 +56,12 @@ const h2 = document.createElement("h2");
 h2.append("Are adorable chickens");
 const h1 = document.querySelector("h1");
 h1.insertAdjacentElement("afterend", h2);
+
+// removeChild -> 부모와 자식관계에 따라 제거
+const firstLi = document.querySelector("li");
+const ul = firstLi.parentElement;
+ul.removeChild(firstLi);
+
+// remove -> 요소 제거
+const img = document.querySelector("img");
+img.remove();

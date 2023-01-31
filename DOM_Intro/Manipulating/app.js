@@ -35,3 +35,11 @@ h2.classList.contains("border");
 h2.classList.toggle("puple");
 h2.classList.toggle("puple");
 h2.classList.toggle("puple");
+
+const firstBold = document.querySelector("b");
+const paragraph = firstBold.parentElement;
+paragraph.children;
+
+const squareImg = document.querySelector(".square");
+squareImg.nextSibling; // 공백이 text node로 됨
+squareImg.nextElementSibling; // img

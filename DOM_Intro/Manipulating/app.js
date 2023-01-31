@@ -43,3 +43,16 @@ paragraph.children;
 const squareImg = document.querySelector(".square");
 squareImg.nextSibling; // 공백이 text node로 됨
 squareImg.nextElementSibling; // img
+
+const newImg = document.createElement("img");
+const newH3 = document.createElement("h3");
+newH3.innerText = "I am new!";
+document.body.appendChild(newH3);
+
+const p = document.querySelector("p");
+p.append("i am new text yaaaayy");
+
+const h2 = document.createElement("h2");
+h2.append("Are adorable chickens");
+const h1 = document.querySelector("h1");
+h1.insertAdjacentElement("afterend", h2);

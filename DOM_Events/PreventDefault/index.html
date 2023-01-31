@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prevent Default</title>
+</head>
+
+<body>
+  <h1>My Form</h1>
+  <!-- form 제출시 /shelter 페이지로 제출된 데이터의 양식이 전송되고 전체 브라우저 창이 표시된다. -->
+  <form action="/shelter" id="shelterForm">
+    <input type="text" id="catName">
+    <button>Submit</button>
+  </form>
+  <h2>Available Cats</h2>
+  <ul id="cats"></ul>
+  <script src="app.js"></script>
+</body>
+
+</html>

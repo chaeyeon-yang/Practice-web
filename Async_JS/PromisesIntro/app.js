@@ -52,24 +52,45 @@ const fakeRequestPromise = (url) => {
 //     }
 // );
 
+// fakeRequestPromise("yeee.com/api/coffe/page1")
+//     .then(() => {
+//         console.log("IT WORKED!!!! (page1)");
+//         fakeRequestPromise("yeee.com/api/coffe/page2")
+//             .then(() => {
+//                 console.log("IT WORKED!!!! (page2)");
+//                 fakeRequestPromise("yeee.com/api/coffe/page3")
+//                     .then(() => {
+//                         console.log("IT WORKED!!!! (page3)");
+//                     })
+//                     .catch(() => {
+//                         console.log("OH NO, ERROR!!! (page3)");
+//                     });
+//             })
+//             .catch(() => {
+//                 console.log("OH NO, ERROR!!! (page2)");
+//             });
+//     })
+//     .catch(() => {
+//         console.log("OH NO, ERROR!!! (page1)");
+//     });
+
 fakeRequestPromise("yeee.com/api/coffe/page1")
-    .then(() => {
-        console.log("IT WORKED!!!! (page1)");
-        fakeRequestPromise("yeee.com/api/coffe/page2")
-            .then(() => {
-                console.log("IT WORKED!!!! (page2)");
-                fakeRequestPromise("yeee.com/api/coffe/page3")
-                    .then(() => {
-                        console.log("IT WORKED!!!! (page3)");
-                    })
-                    .catch(() => {
-                        console.log("OH NO, ERROR!!! (page3)");
-                    });
-            })
-            .catch(() => {
-                console.log("OH NO, ERROR!!! (page2)");
-            });
+    .then((data) => {
+        console.log("IT WORKED!!!!!! (page1)");
+        console.log(data);
+        return fakeRequestPromise("yeee.com/api/coffe/page2");
     })
-    .catch(() => {
-        console.log("OH NO, ERROR!!! (page1)");
+    .then((data) => {
+        console.log("IT WORKED!!!!!! (page2)");
+        console.log(data);
+
+        return fakeRequestPromise("yeee.com/api/coffe/page3");
+    })
+    .then((data) => {
+        console.log("IT WORKED!!!!!! (page3)");
+        console.log(data);
+    })
+    .catch((err) => {
+        console.log("OH NO, A REQUEST FAILED!!!");
+        console.log(err);
     });

@@ -33,6 +33,16 @@ app.get("/comments", (req, res) => {
     res.render("comments/index", { comments });
 });
 
+app.get("/comments/new", (req, res) => {
+    res.render("comments/new");
+});
+
+app.post("/comments", (req, res) => {
+    const { username, comment } = req.body;
+    comments.push({ username, comment });
+    res.send("IT WORKED!");
+});
+
 app.get("/tacos", (req, res) => {
     res.send("GET /tacos response");
 });
@@ -49,8 +59,10 @@ app.listen(3000, () => {
 // text
 // bob - hello!
 
-// GET /comments - list all comments
-// POST /comments = Create a new comment
-// GET /comments/:id - Get one comment (using ID)
-// PATCH /comments/:id - Update one comment
-// DELTE /comments/:id - Destroy one comment
+// Index / comments GET 모든 댓글 조회
+// New / commnets / new GET 새로운 댓글 생성을 위한 Form
+// Create / comments POST 서버에 새로운 댓글 생성
+// Show /comments/:id GET 하나의 특정 댓글만 조회
+// Edit / comments /: id / edit GET 특정 댓글 편집을 위한 Form
+// Update / comments /:id PATCH 서버에 특정 댓글 업데이트
+// Destroy / comments/:id DELETE 서버에 있는 특정 댓글 삭제

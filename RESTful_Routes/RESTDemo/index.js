@@ -1,5 +1,3 @@
-// const { text } = require("express");
-
 const path = require("path");
 const { v4: uuid } = require("uuid"); // generating ID's
 const express = require("express");
@@ -53,6 +51,15 @@ app.get("/comments/:id", (req, res) => {
     const { id } = req.params;
     const comment = comments.find((c) => c.id === id);
     res.render("comments/show", { comment });
+});
+
+// UPDATE
+app.patch("/comments/:id", (req, res) => {
+    const { id } = req.params;
+    const newCommentText = req.body.comment;
+    const foundComment = comments.find((c) => c.id === id);
+    foundComment.comment = newCommentText;
+    res.redirect("/comments");
 });
 
 app.get("/tacos", (req, res) => {

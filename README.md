@@ -1,6 +1,7 @@
 # Practice_web
  
 ### HTML, CSS, JAVASCRIPT 를 공부합니다
+
 - HTML5
 
 - CSS3 
@@ -25,21 +26,21 @@
 
 - Unix(명령줄) 명령
 
-- 노드JS
+- NodeJS
 
 - ExpressJS
 
-- 템플릿
+- 템플릿 (Nunjunks)
 
 - SQL / NoSQL 데이터베이스
 
-- 몽고DB
+- MongoDB
 
 - 데이터베이스 연결
 
 - 스키마 디자인
 
-- 몽구스
+- Mongoose
 
 - 쿠키 및 세션
 

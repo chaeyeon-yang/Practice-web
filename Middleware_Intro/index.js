@@ -7,6 +7,19 @@ const morgan = require("morgan");
 // 모든 request 마다 실행됨 (use)
 // morgan() => 요청에 대한 정보를 로깅함
 app.use(morgan("dev"));
+app.use((req, res, next) => {
+    console.log("THIS IS MY FIRST MIDDLEWARE!!!");
+    return next();
+    console.log("THIS IS MY FIRST MIDDLEWARE = AFTER CALLING NEXT()");
+});
+app.use((req, res, next) => {
+    console.log("THIS IS MY SECOND MIDDLEWARE!!!");
+    return next();
+});
+app.use((req, res, next) => {
+    console.log("THIS IS MY THIRD MIDDLEWARE!!!");
+    return next();
+});
 
 app.get("/", (req, res) => {
     res.send("HOME PAGE!");
@@ -17,5 +30,5 @@ app.get("/dogs", (req, res) => {
 });
 
 app.listen(8080, () => {
-    console.log("App is running on localhost:3000");
+    console.log("App is running on localhost:8080");
 });

@@ -33,13 +33,13 @@ app.use("/dogs", (req, res, next) => {
     next();
 });
 
-app.use((req, res, next) => {
+const verifyPassword = (req, res, next) => {
     const { password } = req.query;
     if (password === "chickennugget") {
         next();
     }
     res.send("SORRY YOU NEED A PASSWORD!!!");
-});
+};
 
 app.get("/", (req, res) => {
     console.log(`REQUEST DATE: ${req.requestTime}`);
@@ -51,9 +51,9 @@ app.get("/dogs", (req, res) => {
     res.send("WOOF WOOF!");
 });
 
-app.get("/secret", (req, res) => {
+app.get("/secret", verifyPassword, (req, res) => {
     res.send(
-        "MY SECRET IS: Sometimes I wear headphones in public so I dont to talk to anyone"
+        "MY SECRET IS: Sometimes I wear headphones in public so I dont have to talk to anyone"
     );
 });
 

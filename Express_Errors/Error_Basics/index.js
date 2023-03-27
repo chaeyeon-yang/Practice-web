@@ -54,9 +54,16 @@ app.use((req, res) => {
 });
 
 app.use((err, req, res, next) => {
-    const { status = 500, message = "Something Went Wrong" } = err;
-    res.status(status).send(message);
+    console.log("**************************");
+    console.log("***********ERROR**********");
+    console.log("**************************");
+    console.log(err);
 });
+
+// app.use((err, req, res, next) => {
+//     const { status = 500, message = "Something Went Wrong" } = err;
+//     res.status(status).send(message);
+// });
 
 app.listen(3000, () => {
     console.log("App is running on localhost:3000");

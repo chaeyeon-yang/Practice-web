@@ -22,7 +22,7 @@ const verifyPassword = (req, res, next) => {
     if (password === "chickennugget") {
         next();
     }
-    throw new AppError("Password required!");
+    throw new AppError("Password required!", 401);
 };
 
 app.get("/", (req, res) => {
@@ -53,11 +53,17 @@ app.use((req, res) => {
     res.status(404).send("NOT FOUND!");
 });
 
+// app.use((err, req, res, next) => {
+//     console.log("**************************");
+//     console.log("***********ERROR**********");
+//     console.log("**************************");
+//     console.log(err);
+// });
+
 app.use((err, req, res, next) => {
-    console.log("**************************");
-    console.log("***********ERROR**********");
-    console.log("**************************");
-    console.log(err);
+    // default value 설정
+    const { status = 500, message = "Something Went Wrong" } = err;
+    res.status(status).send(message);
 });
 
 // app.use((err, req, res, next) => {

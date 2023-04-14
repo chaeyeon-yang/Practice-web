@@ -125,6 +125,7 @@ const handleValidationErr = (err) => {
     return new AppError(`Validation Failed...${err.message}`, 400);
 };
 
+// Differentiating Mongoose Error
 app.use((err, req, res, next) => {
     console.log(err.name);
     //We can single out particular types of Mongoose Errors:
